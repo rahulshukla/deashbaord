@@ -1,0 +1,20 @@
+{
+  "plugins": ["source-map-support", "@babel/plugin-transform-runtime"],
+  "presets": [
+   [
+      "@babel/preset-env",
+      {
+        "debug": false,
+        "targets": {
+          "node": "8.10"
+        },
+        "shippedProposals": true
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
+}
